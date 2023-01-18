@@ -1,0 +1,56 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  font-family:  inherit;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app > *{
+  margin: 1rem;
+}
+
+
+.row {
+  display: flex;
+  
+}
+
+.square {
+  border: black 2px solid;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(64, 64, 205);
+}
+
+.circle {
+  border: black 2px solid;
+  height: calc(100% - 15%);
+  width: calc(100% - 15%);
+  border-radius: 100%;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+.circle[data-color="1"] {
+  background-color: red;
+}
+.circle[data-color="2"] {
+  background-color: yellow;
+}
